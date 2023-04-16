@@ -3,4 +3,83 @@
 @import "reset";
 @import "global";
 
+.header {
+	padding: 55px 0;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.menu {
+	&__list {
+		display: flex;
+	}
+	&__list-item + .menu__list-item {
+		margin-left: 32px;
+	}
+	&__list-link {
+		@extend %rubik-500;
+		font-size: 15px;
+		line-height: 25px;
+		padding-bottom: 1px;
+		color: $default;
+		transition: all 0.3s;
+		&:hover {
+			border-bottom: 1px solid $title2;
+		}
+	}
+}
+.user-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 0 1 317px;
+	&__link {
+		position: relative;
+	}
+	&__link-search {
+		img {
+			padding: 17px 17px;
+		}
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: #edf1f4;
+	}
+	&__link-due {
+		display: flex;
+		justify-content: space-between;
+		background: #fcd7b6;
+		flex: 0 1 178px;
+		padding: 20px 42px;
+		border-radius: 27px 27px 27px 27px;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: "";
+			background-color: #fde7d3;
+			width: 1px;
+			height: 32px;
+			top: 13px;
+			left: 50%;
+		}
+	}
+	&__num {
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		font-size: 10px;
+		line-height: 17px;
+		text-align: center;
+		background: #fff;
+		border-radius: 50%;
+		color: $title1;
+		top: -8px;
+		right: -10px;
+	}
+}
+
+// **************************************** ADAPTIV *****************
 @import "media";
