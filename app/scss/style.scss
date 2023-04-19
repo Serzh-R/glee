@@ -26,7 +26,7 @@
       @extend %rubik-500;
       font-size: 15px;
       line-height: 25px;
-      padding-bottom: 1px;
+      padding: 0 2px 1px ;
       color: $default;
       transition: all 0.3s;
       border-bottom: 1px solid transparent;
@@ -120,8 +120,8 @@
    }
 
    &__nav {
-      width: 128px;
-      margin-right: 184px;
+      width: 137px;
+      margin-right: 180px;
    }
 	&__link{
 		margin-bottom: 10px;
@@ -170,6 +170,7 @@
       color: #fff;
       background-color: #a3bbc8;
 		border: none;
+		cursor: pointer;
    }
 }
 .footer-bottom{
