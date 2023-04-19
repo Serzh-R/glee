@@ -4,82 +4,198 @@
 @import "global";
 
 .header {
-	padding: 55px 0;
-	&__inner {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+   padding: 46px 0;
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
 }
 
 .menu {
-	&__list {
-		display: flex;
-	}
-	&__list-item + .menu__list-item {
-		margin-left: 32px;
-	}
-	&__list-link {
-		@extend %rubik-500;
-		font-size: 15px;
-		line-height: 25px;
-		padding-bottom: 1px;
-		color: $default;
-		transition: all 0.3s;
-		&:hover {
-			border-bottom: 1px solid $title2;
-		}
-	}
+   &__list {
+      display: flex;
+   }
+
+   &__list-item+.menu__list-item {
+      margin-left: 32px;
+   }
+
+   &__list-link {
+      @extend %rubik-500;
+      font-size: 15px;
+      line-height: 25px;
+      padding-bottom: 1px;
+      color: $default;
+      transition: all 0.3s;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+         border-bottom: 1px solid $title2;
+      }
+   }
 }
+
 .user-nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex: 0 1 317px;
+
+   &__link {
+      position: relative;
+   }
+
+   &__link-search {
+      img {
+         padding: 17px 17px;
+      }
+
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #edf1f4;
+   }
+
+   &__link-due {
+      display: flex;
+      justify-content: space-between;
+      background: #fcd7b6;
+      flex: 0 1 178px;
+      padding: 17px 42px;
+      border-radius: 27px 27px 27px 27px;
+      position: relative;
+
+      &::after {
+         position: absolute;
+         content: "";
+         background-color: #fde7d3;
+         width: 1px;
+         height: 32px;
+         top: 13px;
+         left: 50%;
+      }
+   }
+
+   &__num {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      font-size: 10px;
+      line-height: 17px;
+      text-align: center;
+      background: #fff;
+      border-radius: 50%;
+      color: $title1;
+      top: -8px;
+      right: -10px;
+   }
+}
+
+.footer {
+   padding-top: 78px;
+}
+
+.footer-top {
+   border-bottom: 1px solid #dae4e9;
+   display: flex;
+	padding-bottom: 72px;
+
+   &__contact {
+      width: 217px;
+      margin-right: 105px;
+   }
+
+   &__logo {
+      margin-bottom: 20px;
+      display: block;
+   }
+
+   &__adress,
+   &__phone,
+   &__email {
+      display: block;
+		margin-bottom: 10px;
+   }
+
+   &__nav {
+      width: 128px;
+      margin-right: 184px;
+   }
+	&__link{
+		margin-bottom: 10px;
+		display: block;
+	}
+   &__item-form {
+      max-width: 270px;
+   }
+   &__title {
+      text-transform: uppercase;
+      @extend %dmsans-700;
+      font-size: 16px;
+      line-height: 21px;
+      color: #1f2044;
+      margin-bottom: 21px;
+   }
+   &__text {
+      @extend %rubik-400;
+      font-size: 14px;
+      color: $link;
+      line-height: 24px;
+		margin-bottom: 36px;
+   }
+	&__form{ 
+		display: flex;
+		align-items: center;
+	}
+
+   &__form-input {
+		width: 100%;
+		background-color: #fef7f0;
+		border: none;
+		padding: 13px 10px 13px 15px;
+      &::placeholder {
+         color: #234969;
+         @extend %dmsans-400;
+         font-size: 12px;
+      }
+   }
+
+   &__form-btn {
+      @extend %dmsans-400;
+      font-size: 14px;
+      line-height: 21px;
+		padding: 11px 15px;
+      color: #fff;
+      background-color: #a3bbc8;
+		border: none;
+   }
+}
+.footer-bottom{
+	padding: 30px 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex: 0 1 317px;
-	&__link {
-		position: relative;
-	}
-	&__link-search {
-		img {
-			padding: 17px 17px;
-		}
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		background-color: #edf1f4;
-	}
-	&__link-due {
+	&__menu-list{
 		display: flex;
-		justify-content: space-between;
-		background: #fcd7b6;
-		flex: 0 1 178px;
-		padding: 20px 42px;
-		border-radius: 27px 27px 27px 27px;
-		position: relative;
-		&::after {
-			position: absolute;
-			content: "";
-			background-color: #fde7d3;
-			width: 1px;
-			height: 32px;
-			top: 13px;
-			left: 50%;
-		}
+		flex: 0 1 255px;
+		justify-content: space-between
 	}
-	&__num {
-		position: absolute;
-		width: 16px;
-		height: 16px;
-		font-size: 10px;
-		line-height: 17px;
-		text-align: center;
-		background: #fff;
-		border-radius: 50%;
-		color: $title1;
-		top: -8px;
-		right: -10px;
+	&__menu-item + .footer-bottom__menu-item{
+		padding-left: 14px;
+		border-left: 1px solid $link;
 	}
+	
 }
+
+
+
+
+
+
+
+
 
 // **************************************** ADAPTIV *****************
 @import "media";
