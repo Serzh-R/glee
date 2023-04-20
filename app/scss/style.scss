@@ -1,6 +1,7 @@
 @import "vars";
 @import "fonts";
 @import "reset";
+@import "libs";
 @import "global";
 
 .header {
@@ -26,7 +27,7 @@
       @extend %rubik-500;
       font-size: 15px;
       line-height: 25px;
-      padding-bottom: 1px;
+      padding: 0 2px 1px;
       color: $default;
       transition: all 0.3s;
       border-bottom: 1px solid transparent;
@@ -100,7 +101,7 @@
 .footer-top {
    border-bottom: 1px solid #dae4e9;
    display: flex;
-	padding-bottom: 72px;
+   padding-bottom: 72px;
 
    &__contact {
       width: 217px;
@@ -116,20 +117,23 @@
    &__phone,
    &__email {
       display: block;
-		margin-bottom: 10px;
+      margin-bottom: 10px;
    }
 
    &__nav {
-      width: 128px;
-      margin-right: 184px;
+      width: 137px;
+      margin-right: 180px;
    }
-	&__link{
-		margin-bottom: 10px;
-		display: block;
-	}
+
+   &__link {
+      margin-bottom: 10px;
+      display: block;
+   }
+
    &__item-form {
       max-width: 270px;
    }
+
    &__title {
       text-transform: uppercase;
       @extend %dmsans-700;
@@ -138,23 +142,26 @@
       color: #1f2044;
       margin-bottom: 21px;
    }
+
    &__text {
       @extend %rubik-400;
       font-size: 14px;
       color: $link;
       line-height: 24px;
-		margin-bottom: 36px;
+      margin-bottom: 36px;
    }
-	&__form{ 
-		display: flex;
-		align-items: center;
-	}
+
+   &__form {
+      display: flex;
+      align-items: center;
+   }
 
    &__form-input {
-		width: 100%;
-		background-color: #fef7f0;
-		border: none;
-		padding: 13px 10px 13px 15px;
+      width: 100%;
+      background-color: #fef7f0;
+      border: none;
+      padding: 13px 10px 13px 15px;
+
       &::placeholder {
          color: #234969;
          @extend %dmsans-400;
@@ -166,28 +173,153 @@
       @extend %dmsans-400;
       font-size: 14px;
       line-height: 21px;
-		padding: 11px 15px;
+      padding: 11px 15px;
       color: #fff;
       background-color: #a3bbc8;
-		border: none;
+      border: none;
+      cursor: pointer;
    }
 }
-.footer-bottom{
-	padding: 30px 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	&__menu-list{
-		display: flex;
-		flex: 0 1 255px;
-		justify-content: space-between
-	}
-	&__menu-item + .footer-bottom__menu-item{
-		padding-left: 14px;
-		border-left: 1px solid $link;
-	}
-	
+
+.footer-bottom {
+   padding: 30px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   &__menu-list {
+      display: flex;
+      flex: 0 1 255px;
+      justify-content: space-between
+   }
+
+   &__menu-item+.footer-bottom__menu-item {
+      padding-left: 14px;
+      border-left: 1px solid $link;
+   }
+
 }
+
+// ********************** TOP-SLIDER ***********************************************
+
+.top-slider {
+   &__bg {
+      background-color: #fcd7b6;
+      padding: 100px 0 40px;
+   }
+
+   &__inner {
+      background: url('../images/slider/slider-bg.png');
+      background-repeat: no-repeat;
+      background-size: 630px 630px;
+      background-position-x: 82%;
+      background-position-y: 30%;
+      padding-top: 145px;
+   }
+
+   &__item {
+      max-width: 1166px;
+      margin: 0 auto;
+      display: flex !important;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 207px;
+   }
+
+   &__title {
+      @extend %rubik-500;
+      font-size: 72px;
+      line-height: 70px;
+      color: $title1;
+      margin-bottom: 28px;
+      max-width: 530px;
+   }
+
+   &__text {
+      @extend %rubik-400;
+      font-size: 18px;
+      line-height: 30px;
+      color: #436372;
+      margin-bottom: 25px;
+      max-width: 370px;
+   }
+
+   &__link {
+      @extend %btn;
+   }
+
+   &__img {
+      margin-top: 50px;
+      height: 263px;
+   }
+
+   .slick-dots {
+      display: flex;
+      justify-content: center;
+
+      li {
+         button {
+            background-color: #fde3cc;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin-right: 13px;
+            font-size: 11px;
+            @extend %rubik-500;
+            color: $title2;
+         }
+      }
+
+      .slick-active {
+         button {
+            background-color: #fff;
+         }
+
+      }
+   }
+}
+
+// ************************************** DOP **********************************
+
+.dop {
+	&__inner{
+		background-color: #fef7f0;
+		display: flex;
+	}
+	&__item{
+		flex:0 1 33.333%;
+		padding: 40px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__item:not(:last-child){
+		border-right:1px solid #e8e4df;
+	}
+	&__icon{
+		margin-right: 25px;
+	}
+	&__content{
+		flex: 0 1 215px;
+	}
+	&__title{
+		@extend %dmsans-700;
+		font-size: 18px;
+		line-height: 40px;
+		color: #414141;
+	}
+	&__text{
+		@extend %dmsans-400;
+		font-size: 16px;
+		line-height: 30px;
+		color: #585858;
+	}
+}
+
+
+
+
 
 
 
