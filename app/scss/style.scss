@@ -1,6 +1,7 @@
 @import "vars";
 @import "fonts";
 @import "reset";
+@import "libs";
 @import "global";
 
 .header {
@@ -189,6 +190,81 @@
 	}
 	
 }
+
+.top-slider{
+	&__container{
+		background-color: #fcd7b6;
+		padding: 100px 0 40px;
+	}
+	&__inner{
+		background: url('../images/slider/slider-bg.png');
+		background-repeat: no-repeat;
+		background-size: 630px 630px;
+		background-position-x: 82%;
+		background-position-y: 30%;
+		padding-top: 145px;
+		
+	}
+	&__item{
+		max-width: 1166px;
+		margin: 0 auto;
+		display: flex !important;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 207px;
+		
+	}
+	&__title{
+		@extend %rubik-500;
+		font-size: 72px;
+		line-height: 70px;
+		color: $title1;
+		margin-bottom: 28px;
+		max-width: 530px;
+	}
+	&__text{
+		@extend %rubik-400;
+		font-size: 18px;
+		line-height: 30px;
+		color: #436372;
+		margin-bottom: 25px;
+		max-width: 370px;
+	}
+	&__link{
+		@extend %btn;
+	}
+	&__img{
+		margin-top: 50px;
+		height: 263px;
+	}
+	.slick-dots{
+		display: flex;
+		justify-content: center;
+		li{
+			button{
+				background-color: #fde3cc;
+				border: none;
+				border-radius: 50%;
+				width: 30px;
+				height: 30px;
+				margin-right: 13px;
+				font-size: 11px;
+				@extend %rubik-500;
+				color: $title2;
+			}
+		}
+		.slick-active{
+			button{
+				background-color: #fff;
+			}
+
+		}
+	}
+}
+
+
+
+
 
 
 
