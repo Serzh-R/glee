@@ -326,7 +326,7 @@
 // ************************ WEEK ******************************************
 
 .week {
-   padding: 73px 0;
+   padding: 73px 0 185px;
 
    &__title {
       margin-bottom: 35px;
@@ -357,13 +357,10 @@
    }
 
    &__items {
-      // column-count: 4;
-      // column-gap: 30px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-column-gap: 30px;
       grid-row-gap: 40px;
-      //grid-template-rows: repeat(2,1fr);
    }
 
    &__item {
@@ -432,6 +429,22 @@
       }
    }
 
+}
+
+// *********************** VIDEO **************************************
+
+.video{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	&__popup{
+		height: 610px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
 }
 
 
