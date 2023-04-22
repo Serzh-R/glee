@@ -5,6 +5,7 @@ body{
 
 body {
    font-size: 16px;
+	line-height: 1;
    color: $default;
    @extend %dmsans-700;
 	display: flex;
@@ -33,3 +34,12 @@ a {
    line-height: 24px;
    color: $link;
 }
+
+.title{
+	color: $title2;
+	font-size: 36px;
+	line-height: 1;
+}
+
+
+ 
