@@ -405,8 +405,6 @@
    }
 
    &__selection-box {
-		border: none;
-		padding: 0;
       width: 45px;
       height: 45px;
       color: #a3bbc8;
@@ -416,7 +414,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-		cursor: pointer;
 
       &:not(:last-child) {
          margin-right: 16px;
