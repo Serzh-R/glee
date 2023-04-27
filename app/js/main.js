@@ -7,4 +7,10 @@ $(function(){
 	});
 
 	var mixer = mixitup('.week__items');
+
+	$(".star").rateYo({
+		starWidth: "40px",
+		fullStar: true,
+		readOnly: true
+	 });
 });
