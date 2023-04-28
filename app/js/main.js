@@ -8,6 +8,8 @@ $(function(){
 
 	var mixer = mixitup('.week__items');
 
+	var mixer = mixitup('.design__items');
+
 	$(".star").rateYo({
 		starWidth: "40px",
 		fullStar: true,

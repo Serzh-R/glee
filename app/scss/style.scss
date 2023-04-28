@@ -489,6 +489,41 @@
 	}
 }
 
+// *************************** DESIGN ***********************************
+
+.design{
+	padding: 100px 0 115px;
+
+	&__control{
+		margin-bottom: 80px;
+	}
+
+	&__items{
+		display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+	}
+}
+
+.item-design{
+	position: relative;
+	&__content{
+		max-width: 175px;
+		position: absolute;
+		top: 40px;
+		left: 35px;
+	}
+	&__title{
+		color: $title2;
+		font-size: 20px;
+		line-height: 1;
+		margin-bottom: 18px;
+	}
+	&__text{
+		color: #a3bbc8;
+	}
+}
+
 
 
 
