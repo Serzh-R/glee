@@ -440,92 +440,99 @@
 
 // *************************** LAMPS ************************************
 
-.lamps{
-	&__items{
-		display: flex;
-		gap: 30px;
-	}
-	&__item{
-		flex: 0 1 50%;
-	}
+.lamps {
+   &__items {
+      display: flex;
+      gap: 30px;
+   }
+
+   &__item {
+      flex: 0 1 50%;
+   }
 
 }
 
-.item-lamps{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #feefe2;
-	&__images{
-		transform: translateY(-80px);
-		margin-right: 50px;
-	}
-	&__content{
-		max-width: 330px;
-	}
-	&__title{
-		font-size: 26px;
-		line-height: 32px;
-		color: $title1;
-		margin-bottom: 25px;
-	}
-	&__text{
-		@extend %rubik-400;
-		font-size: 16px;
-		line-height: 30px;
-		color: $title1;
-		margin-bottom: 30px;
-	}
-	&__link{
-		@extend %btn;
-		background-color: transparent;
-		border: 1px solid #b3b7b5;
-		border-radius: 5px;
-		padding: 23px 85px 23px 19px;
-		color: #436372;
-		path{
-			fill:#436372;
-		}
-	}
+.item-lamps {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #feefe2;
+
+   &__images {
+      transform: translateY(-80px);
+      margin-right: 50px;
+   }
+
+   &__content {
+      max-width: 330px;
+   }
+
+   &__title {
+      font-size: 26px;
+      line-height: 32px;
+      color: $title1;
+      margin-bottom: 25px;
+   }
+
+   &__text {
+      @extend %rubik-400;
+      font-size: 16px;
+      line-height: 30px;
+      color: $title1;
+      margin-bottom: 30px;
+   }
+
+   &__link {
+      @extend %btn;
+      background-color: transparent;
+      border: 1px solid #b3b7b5;
+      border-radius: 5px;
+      padding: 23px 85px 23px 19px;
+      color: #436372;
+
+      path {
+         fill: #436372;
+      }
+   }
 }
 
 // *************************** DESIGN ***********************************
 
-.design{
-	padding: 100px 0 115px;
+.design {
+   padding: 100px 0 115px;
 
-	&__control{
-		margin-bottom: 80px;
-	}
+   &__control {
+      margin-bottom: 80px;
+   }
 
-	&__items{
-		display: grid;
+   &__items {
+      display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
-	}
+   }
 }
 
-.item-design{
-	position: relative;
-	&__content{
-		max-width: 175px;
-		position: absolute;
-		top: 40px;
-		left: 35px;
-	}
-	&__title{
-		color: $title2;
-		font-size: 20px;
-		line-height: 1;
-		margin-bottom: 18px;
-	}
-	&__text{
-		color: #a3bbc8;
-	}
+.item-design {
+   position: relative;
+
+   &__content {
+      max-width: 175px;
+      position: absolute;
+      top: 40px;
+      left: 35px;
+   }
+
+   &__title {
+      color: $title2;
+      font-size: 20px;
+      line-height: 1;
+      margin-bottom: 18px;
+   }
+
+   &__text {
+      color: #a3bbc8;
+   }
 }
-
-
-
 
 // *********************** VIDEO **************************************
 
@@ -544,21 +551,116 @@
 
 }
 
+// ************************* ARTICLES *********************************
 
+//box-shadow: 3px 5.196px 47px 3px rgba(37, 37, 37, 0.05);
 
+.articles {
+   padding-top: 120px;
+	position: relative;
 
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 45px;
+   }
 
+   &__view-all {
+      color: #262626;
+   }
 
+   &__view-arrow {
+      margin-left: 14px;
+      display: inline-block;
+      transform: translateY(1px);
+   }
 
+   &__items {
+      display: flex;
+      justify-content: space-between;
+   }
 
+   &__item {
+      max-width: 370px;
+      box-shadow: 3px 5.196px 47px 3px rgba(37, 37, 37, 0.05);
+      display: flex;
+      flex-direction: column;
+   }
 
+   &__images-link {
+      display: block;
 
+      img {
+         height: 250px;
+         object-fit: cover;
+      }
+   }
 
+   &__content {
+      padding: 30px 29px 25px;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+   }
 
-.star {
-   padding-top: 50px;
-   margin: 0 auto;
+   &__text-link {
+      flex: 1 1 auto;
+      color: #262626;
+      font-size: 18px;
+      @extend %dmsans-500;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e0e0e0;
+   }
+
+   &__date-autor {
+      padding-top: 20px;
+   }
+
+   &__date {
+      margin-right: 30px;
+   }
+
+   &__date,
+   &__autor-link {
+      display: inline-block;
+      @extend %rubik-400;
+      font-size: 12px;
+      color: #222933;
+      text-transform: uppercase;
+   }
+
+   &__partners {
+      padding: 90px 0;
+   }
+
+   &__partners-list {
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+	&__bg{
+		position: absolute;
+		height: 467px;
+		width: 100%;
+		background-color: #fef7f0;
+		bottom: 0;
+		z-index: -1;
+	}
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 // **************************************** ADAPTIV *****************

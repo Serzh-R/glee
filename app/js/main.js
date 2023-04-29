@@ -15,4 +15,11 @@ $(function(){
 		fullStar: true,
 		readOnly: true
 	 });
+
+	  // получаем высоту блока block-1
+	 //var block1Height = $('.articles__content').height();
+
+	// сдвигаем блок block-2 на высоту блока block-1
+	//$('.articles__partners').css('bottom', block1Height); 
+
 });
