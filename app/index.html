@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Glee</title>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -168,243 +168,389 @@
 
 		<section class="week">
 			<div class="container2">
-				<h2 class="week__title title">
-					Products of the week
-				</h2>
-				<div class="week__filter">
-					<button class="week__filter-btn" data-filter="all">All</button>
-					<button class="week__filter-btn" data-filter=".category-a">Furnitures </button>
-					<button class="week__filter-btn" data-filter=".category-b">Chairs</button>
-					<button class="week__filter-btn" data-filter=".category-c">Lighting</button>
-					<button class="week__filter-btn" data-filter=".category-d">Decor</button>
+
+				<div class="week__control control">
+					<h2 class="control__title title">
+						Products of the week
+					</h2>
+					<div class="control__filter">
+						<button class="control__filter-btn" data-filter="all">All</button>
+						<button class="control__filter-btn" data-filter=".category-a">Furnitures </button>
+						<button class="control__filter-btn" data-filter=".category-b">Chairs</button>
+						<button class="control__filter-btn" data-filter=".category-c">Lighting</button>
+						<button class="control__filter-btn" data-filter=".category-d">Decor</button>
+					</div>
 				</div>
+
 				<div class="week__items">
-					<div class="week__item mix category-a">
-						<img class="week__images" src="images/week/photo-week1.png" alt="week-photo">
-						<h5 class="week__photo-title">Wooden radio</h5>
-						<p class="week__photo-price">$29.00</p>
-						<div class="week__selection">
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+					<div class="week-item mix category-a">
+						<img class="week-item__images" src="images/week/photo-week1.png" alt="week-photo">
+						<h5 class="week-item__title">Wooden radio</h5>
+						<p class="week-item__price">$29.00</p>
+						<div class="week-item__selection">
+							<a class="week-item__box" href="#">
+								<svg width="20" height="20" viewBox="0 0 20 20">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
 										transform="translate(-740 -1563)" />
 								</svg>
-							</button>
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+							</a>
+							<a class="week-item__box" href="#">
+								<svg width="22" height="20" viewBox="0 0 22 20">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
 										transform="translate(-800 -1563)" />
 								</svg>
-							</button>
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+							</a>
+							<a class="week-item__box" href="#">
+								<svg width="22" height="18" viewBox="0 0 22 18">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
 										transform="translate(-861 -1564)" />
 								</svg>
-							</button>
+							</a>
 						</div>
 					</div>
-					<div class="week__item mix category-a">
-						<img class="week__images" src="images/week/photo-week2.png" alt="week-photo">
-						<h5 class="week__photo-title">Wooden chair</h5>
-						<p class="week__photo-price">$29.00</p>
-						<div class="week__selection">
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+					<div class="week-item mix category-a">
+						<img class="week-item__images" src="images/week/photo-week2.png" alt="week-photo">
+						<h5 class="week-item__title">Wooden chair</h5>
+						<p class="week-item__price">$29.00</p>
+						<div class="week-item__selection">
+							<a class="week-item__box" href="#">
+								<svg width="20" height="20" viewBox="0 0 20 20">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
 										transform="translate(-740 -1563)" />
 								</svg>
-							</button>
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+							</a>
+							<a class="week-item__box" href="#">
+								<svg width="22" height="20" viewBox="0 0 22 20">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
 										transform="translate(-800 -1563)" />
 								</svg>
-							</button>
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+							</a>
+							<a class="week-item__box" href="#">
+								<svg width="22" height="18" viewBox="0 0 22 18">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
 										transform="translate(-861 -1564)" />
 								</svg>
-							</button>
+							</a>
 						</div>
 					</div>
-					<div class="week__item mix category-b">
-						<img class="week__images" src="images/week/photo-week3.png" alt="week-photo">
-						<h5 class="week__photo-title">Wooden chair</h5>
-						<p class="week__photo-price">$29.00</p>
-						<div class="week__selection">
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+					<div class="week-item mix category-b">
+						<img class="week-item__images" src="images/week/photo-week3.png" alt="week-photo">
+						<h5 class="week-item__title">Wooden chair</h5>
+						<p class="week-item__price">$29.00</p>
+						<div class="week-item__selection">
+							<a class="week-item__box" href="#">
+								<svg width="20" height="20" viewBox="0 0 20 20">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
 										transform="translate(-740 -1563)" />
 								</svg>
-							</button>
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+							</a>
+							<a class="week-item__box" href="#">
+								<svg width="22" height="20" viewBox="0 0 22 20">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
 										transform="translate(-800 -1563)" />
 								</svg>
-							</button>
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+							</a>
+							<a class="week-item__box" href="#">
+								<svg width="22" height="18" viewBox="0 0 22 18">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
 										transform="translate(-861 -1564)" />
 								</svg>
-							</button>
+							</a>
 						</div>
 					</div>
-					<div class="week__item mix category-b">
-						<img class="week__images" src="images/week/photo-week4.png" alt="week-photo">
-						<h5 class="week__photo-title">Retro table</h5>
-						<p class="week__photo-price">$29.00</p>
-						<div class="week__selection">
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+					<div class="week-item mix category-b">
+						<img class="week-item__images" src="images/week/photo-week4.png" alt="week-photo">
+						<h5 class="week-item__title">Retro table</h5>
+						<p class="week-item__price">$29.00</p>
+						<div class="week-item__selection">
+							<a class="week-item__box" href="#">
+								<svg width="20" height="20" viewBox="0 0 20 20">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
 										transform="translate(-740 -1563)" />
 								</svg>
-							</button>
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+							</a>
+							<a class="week-item__box" href="#">
+								<svg width="22" height="20" viewBox="0 0 22 20">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
 										transform="translate(-800 -1563)" />
 								</svg>
-							</button>
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+							</a>
+							<a class="week-item__box" href="#">
+								<svg width="22" height="18" viewBox="0 0 22 18">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
 										transform="translate(-861 -1564)" />
 								</svg>
-							</button>
+							</a>
 						</div>
 					</div>
-					<div class="week__item mix category-b">
-						<img class="week__images" src="images/week/photo-week5.png" alt="week-photo">
-						<h5 class="week__photo-title">Wooden radio</h5>
-						<p class="week__photo-price">$29.00</p>
-						<div class="week__selection">
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+					<div class="week-item mix category-b">
+						<img class="week-item__images" src="images/week/photo-week5.png" alt="week-photo">
+						<h5 class="week-item__title">Wooden radio</h5>
+						<p class="week-item__price">$29.00</p>
+						<div class="week-item__selection">
+							<a class="week-item__box" href="#">
+								<svg width="20" height="20" viewBox="0 0 20 20">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
 										transform="translate(-740 -1563)" />
 								</svg>
-							</button>
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+							</a>
+							<a class="week-item__box" href="#">
+								<svg width="22" height="20" viewBox="0 0 22 20">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
 										transform="translate(-800 -1563)" />
 								</svg>
-							</button>
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+							</a>
+							<a class="week-item__box" href="#">
+								<svg width="22" height="18" viewBox="0 0 22 18">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
 										transform="translate(-861 -1564)" />
 								</svg>
-							</button>
+							</a>
 						</div>
 					</div>
-					<div class="week__item mix category-c">
-						<img class="week__images" src="images/week/photo-week6.png" alt="week-photo">
-						<h5 class="week__photo-title">Wooden chair</h5>
-						<p class="week__photo-price">$29.00</p>
-						<div class="week__selection">
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+					<div class="week-item mix category-c">
+						<img class="week-item__images" src="images/week/photo-week6.png" alt="week-photo">
+						<h5 class="week-item__title">Wooden chair</h5>
+						<p class="week-item__price">$29.00</p>
+						<div class="week-item__selection">
+							<a class="week-item__box" href="#">
+								<svg width="20" height="20" viewBox="0 0 20 20">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
 										transform="translate(-740 -1563)" />
 								</svg>
-							</button>
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+							</a>
+							<a class="week-item__box" href="#">
+								<svg width="22" height="20" viewBox="0 0 22 20">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
 										transform="translate(-800 -1563)" />
 								</svg>
-							</button>
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+							</a>
+							<a class="week-item__box" href="#">
+								<svg width="22" height="18" viewBox="0 0 22 18">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
 										transform="translate(-861 -1564)" />
 								</svg>
-							</button>
+							</a>
 						</div>
 					</div>
-					<div class="week__item mix category-d">
-						<img class="week__images" src="images/week/photo-week7.png" alt="week-photo">
-						<h5 class="week__photo-title">Wooden chair</h5>
-						<p class="week__photo-price">$29.00</p>
-						<div class="week__selection">
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+					<div class="week-item mix category-d">
+						<img class="week-item__images" src="images/week/photo-week7.png" alt="week-photo">
+						<h5 class="week-item__title">Wooden chair</h5>
+						<p class="week-item__price">$29.00</p>
+						<div class="week-item__selection">
+							<a class="week-item__box" href="#">
+								<svg width="20" height="20" viewBox="0 0 20 20">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
 										transform="translate(-740 -1563)" />
 								</svg>
-							</button>
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+							</a>
+							<a class="week-item__box" href="#">
+								<svg width="22" height="20" viewBox="0 0 22 20">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
 										transform="translate(-800 -1563)" />
 								</svg>
-							</button>
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+							</a>
+							<a class="week-item__box" href="#">
+								<svg width="22" height="18" viewBox="0 0 22 18">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
 										transform="translate(-861 -1564)" />
 								</svg>
-							</button>
+							</a>
 						</div>
 					</div>
-					<div class="week__item mix category-d">
-						<img class="week__images" src="images/week/photo-week8.png" alt="week-photo">
-						<h5 class="week__photo-title">Retro table</h5>
-						<p class="week__photo-price">$29.00</p>
-						<div class="week__selection">
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+					<div class="week-item mix category-d">
+						<img class="week-item__images" src="images/week/photo-week8.png" alt="week-photo">
+						<h5 class="week-item__title">Retro table</h5>
+						<p class="week-item__price">$29.00</p>
+						<div class="week-item__selection">
+							<a class="week-item__box" href="#">
+								<svg width="20" height="20" viewBox="0 0 20 20">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
 										transform="translate(-740 -1563)" />
 								</svg>
-							</button>
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+							</a>
+							<a class="week-item__box" href="#">
+								<svg width="22" height="20" viewBox="0 0 22 20">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
 										transform="translate(-800 -1563)" />
 								</svg>
-							</button>
-							<button class="week__selection-box">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+							</a>
+							<a class="week-item__box" href="#">
+								<svg width="22" height="18" viewBox="0 0 22 18">
 									<path fill="#a3bbc8" fill-rule="evenodd"
 										d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
 										transform="translate(-861 -1564)" />
 								</svg>
-							</button>
+							</a>
 						</div>
 					</div>
 				</div>
 
+			</div>
+		</section>
+
+		<section class="lamps">
+			<div class="container">
+				<div class="lamps__items">
+
+					<div class="lamps__item item-lamps">
+						<div class="item-lamps__images">
+							<img class="item-lamps__img" src="images/lamps/1.png" alt="photo-lamps">
+						</div>
+						<div class="item-lamps__content">
+							<h3 class="item-lamps__title">
+								Mirum Notare Tellus
+							</h3>
+							<p class="item-lamps__text">
+								LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
+							</p>
+							<a class="item-lamps__link" href="#">
+								View More
+								<svg width="22" height="9" viewBox="0 0 22 9">
+									<path fill="#fff" fill-rule="evenodd"
+										d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z"
+										transform="translate(-535 -649)" />
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="lamps__item item-lamps">
+						<div class="item-lamps__images">
+							<img class="item-lamps__img" src="images/lamps/2.png" alt="photo-lamps">
+						</div>
+						<div class="item-lamps__content">
+							<h3 class="item-lamps__title">Malesuada Tempor
+								Euismod
+							</h3>
+							<p class="item-lamps__text">
+								50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
+							</p>
+							<a class="item-lamps__link" href="#">
+								View More
+								<svg width="22" height="9" viewBox="0 0 22 9">
+									<path fill="#fff" fill-rule="evenodd"
+										d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z"
+										transform="translate(-535 -649)" />
+								</svg>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="design">
+			<div class="container2">
+				<div class="design__control control">
+					<h2 class="control__title title">
+						New Design
+					</h2>
+					<div class="control__filter">
+						<button class="control__filter-btn" data-filter="all">All</button>
+						<button class="control__filter-btn" data-filter=".category-a">Furnitures </button>
+						<button class="control__filter-btn" data-filter=".category-b">Chairs</button>
+						<button class="control__filter-btn" data-filter=".category-c">Lighting</button>
+						<button class="control__filter-btn" data-filter=".category-d">Decor</button>
+					</div>
+				</div>
+				<div class="design__items">
+					<div class="design__item item-design mix category-a">
+						<div class="item-design__content">
+							<h4 class="item-design__title">
+								Beat Flat Pendant
+								Black
+							</h4>
+							<p class="item-design__text">Classic</p>
+						</div>
+						<div class="item-design__images">
+							<img src="images/design/1.jpg" alt="photo new design">
+						</div>
+					</div>
+					<div class="design__item item-design mix category-a">
+						<div class="item-design__content">
+							<h4 class="item-design__title">
+								Lampe Sur Pieds
+								Bamboo
+							</h4>
+							<p class="item-design__text">Classic</p>
+						</div>
+						<div class="item-design__images">
+							<img src="images/design/2.jpg" alt="photo new design">
+						</div>
+					</div>
+					<div class="design__item item-design mix category-b">
+						<div class="item-design__content">
+							<h4 class="item-design__title">
+								Rattan Rocking
+								Chair
+							</h4>
+							<p class="item-design__text">Classic</p>
+						</div>
+						<div class="item-design__images">
+							<img src="images/design/3.jpg" alt="photo new design">
+						</div>
+					</div>
+					<div class="design__item item-design mix category-c">
+						<div class="item-design__content">
+							<h4 class="item-design__title">
+								Rattan Rocking
+								Chair
+							</h4>
+							<p class="item-design__text">Classic</p>
+						</div>
+						<div class="item-design__images">
+							<img src="images/design/4.jpg" alt="photo new design">
+						</div>
+					</div>
+					<div class="design__item item-design mix category-c">
+						<div class="item-design__content">
+							<h4 class="item-design__title">
+								Rattan Rocking
+								Chair
+							</h4>
+							<p class="item-design__text">Classic</p>
+						</div>
+						<div class="item-design__images">
+							<img src="images/design/5.jpg" alt="photo new design">
+						</div>
+					</div>
+					<div class="design__item item-design mix category-d">
+						<div class="item-design__content">
+							<h4 class="item-design__title">
+								Lampe Sur Pieds
+								Bamboo
+							</h4>
+							<p class="item-design__text">Classic</p>
+						</div>
+						<div class="item-design__images">
+							<img src="images/design/6.jpg" alt="photo new design">
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -414,6 +560,94 @@
 					<img src="images/video/video-play.svg" alt="video play button">
 				</a>
 			</div>
+		</section>
+
+		<section class="articles">
+			<div class="container2">
+				<div class="articles__top">
+					<h2 class="articles__title title">
+						Our Insights & Articles
+					</h2>
+					<a class="articles__view-all" href="#">
+						View All
+						<div class="articles__view-arrow">
+							<svg width="6.1" height="10.97" viewBox="0 0 6.1 10.97">
+								<path fill="#262626" fill-rule="evenodd"
+									d="M1539.33,4295.69a0.53,0.53,0,0,1-.41-0.19,0.6,0.6,0,0,1-.15-0.4,0.631,0.631,0,0,1,.17-0.43l4.55-4.47-4.55-4.48a0.607,0.607,0,0,1-.17-0.42,0.629,0.629,0,0,1,.15-0.41,0.559,0.559,0,0,1,.8-0.02l4.98,4.9,0.01,0.01a0.657,0.657,0,0,1,.12.17h0a0.7,0.7,0,0,1,.05.25h0a0.742,0.742,0,0,1-.05.25h0a0.61,0.61,0,0,1-.12.16c0,0.01-.01.01-0.01,0.02l-4.98,4.9A0.589,0.589,0,0,1,1539.33,4295.69Z"
+									transform="translate(-1538.78 -4284.72)" />
+							</svg>
+						</div>
+					</a>
+				</div>
+				<div class="articles__items">
+					<div class="articles__item">
+						<a class="articles__images-link" href="#">
+							<img class="articles__img" src="images/articles/1.jpg" alt="photo news">
+						</a>
+						<div class="articles__content">
+							<a class="articles__text-link" href="#">
+								Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+							</a>
+							<div class="articles__date-autor">
+								<div class="articles__date">28 JANUARY, 2020</div>
+								<a class="articles__autor-link" href="#">BY ADMIN</a>
+							</div>
+						</div>
+					</div>
+					<div class="articles__item">
+						<a class="articles__images-link" href="#">
+							<img class="articles__img" src="images/articles/2.jpg" alt="photo news">
+						</a>
+						<div class="articles__content">
+							<a class="articles__text-link" href="#">
+								Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+							</a>
+							<div class="articles__date-autor">
+								<div class="articles__date">28 JANUARY, 2020</div>
+								<a class="articles__autor-link" href="#">BY ADMIN</a>
+							</div>
+						</div>
+					</div>
+					<div class="articles__item">
+						<a class="articles__images-link" href="#">
+							<img class="articles__img" src="images/articles/3.jpg" alt="photo news">
+						</a>
+						<div class="articles__content">
+							<a class="articles__text-link" href="#">
+								Rncididunt ut labore et dolore magna aliqua. Ut enim
+							</a>
+							<div class="articles__date-autor">
+								<div class="articles__date">28 JANUARY, 2020</div>
+								<a class="articles__autor-link" href="#">BY ADMIN</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="articles__partners">
+
+					<ul class="articles__partners-list">
+						<li class="articles__partners-item">
+							<img src="images/articles/partner1.png" alt="logo partner">
+						</li>
+						<li class="articles__partners-item">
+							<img src="images/articles/partner2.png" alt="logo partner">
+						</li>
+						<li class="articles__partners-item">
+							<img src="images/articles/partner3.png" alt="logo partner">
+						</li>
+						<li class="articles__partners-item">
+							<img src="images/articles/partner4.png" alt="logo partner">
+						</li>
+						<li class="articles__partners-item">
+							<img src="images/articles/partner5.png" alt="logo partner">
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+			<div class="articles__bg"></div>
 		</section>
 
 	</main>
